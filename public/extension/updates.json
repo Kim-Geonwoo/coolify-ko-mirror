@@ -1,7 +1,13 @@
 {
   "addons": {
     "coolify-ko@unofficial": {
-      "updates": []
+      "updates": [
+        {
+          "version": "0.1.2",
+          "update_link": "https://coolify-ko.geonwoo.dev/extension/coolify-ko-0.1.2.xpi",
+          "update_hash": "sha256:3dda462e72d2e3554a2cc3a98f60689e18c7ca9a1fe19f6f3a6b7a04e10b98e9"
+        }
+      ]
     }
   }
 }
