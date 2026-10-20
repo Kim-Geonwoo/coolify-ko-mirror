@@ -1,0 +1,7 @@
+/*
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=300
+
+/extension/*.xpi
+  Content-Type: application/x-xpinstall

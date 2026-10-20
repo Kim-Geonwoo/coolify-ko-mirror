@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>coolify-ko</title>
+<style>body{max-width:760px;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui,sans-serif}pre{background:#f4f4f5;padding:.75rem;overflow-x:auto}</style>
+</head>
+<body>
+<h1>coolify-ko</h1>
+<p>자체 호스팅 <a href="https://coolify.io">Coolify</a>에 한국어 화면을 얹는 <strong>비공식</strong> 판입니다. 공식 이미지 위에 번역 파일만 덮고, 언제든 공식판으로 돌아갈 수 있습니다. 지금 판: 4.4.6</p>
+<p>An unofficial Korean build of self-hosted Coolify. It keeps the official image and only adds translation files.</p>
+<h2>설치(이미 설치한 Coolify 서버에서)</h2>
+<pre>curl -fsSL https://coolify-ko.geonwoo.dev/coolify-ko.sh -o coolify-ko.sh
+curl -fsSL https://coolify-ko.geonwoo.dev/coolify-ko.sh.sha256 | sha256sum -c -
+sudo bash coolify-ko.sh install</pre>
+<h2>공식판으로 되돌리기</h2>
+<pre>sudo bash /data/coolify/source/coolify-ko.sh uninstall</pre>
+<h2>서명 확인</h2>
+<pre>cosign verify --key https://coolify-ko.geonwoo.dev/cosign.pub ghcr.io/kim-geonwoo/coolify-ko:4.4.6</pre>
+<p>소스와 설명: <a href="https://github.com/Kim-Geonwoo/coolify-korean">https://github.com/Kim-Geonwoo/coolify-korean</a> · <a href="privacy.html">개인정보 처리방침(브라우저 확장)</a></p>
+</body>
+</html>
