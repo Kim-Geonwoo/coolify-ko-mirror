@@ -24,6 +24,7 @@
 <li>한국어판을 설치한 Coolify 서버가 업데이트를 확인하려고 versions.json을 받을 때</li>
 <li>확장이 번역 사전과 확장 갱신을 확인할 때</li>
 </ul>
+<p>확장은 이 요청에 이용자 데이터를 담지 않습니다. 모든 웹 요청처럼 IP 주소와 브라우저 정보만 사이트에 전달됩니다.</p>
 <p><strong>나. 브라우저 확장이 이용자의 기기에만 저장하는 정보</strong>(운영자에게 보내지 않습니다)</p>
 <ul>
 <li>이용자가 확장을 켠 주소(예: https://coolify.example.com) 목록</li>
@@ -35,12 +36,12 @@
 <h2>2. 처리 목적</h2>
 <ul>
 <li>가.의 접속 기록: 파일 전달, 서비스의 안정적 운영과 보안(장애 원인 확인, 남용·공격 대응)</li>
-<li>나.의 확장 정보: 번역 기능 제공. 누락 문구 목록은 이용자가 직접 내보내 번역 개선을 요청할 때만 쓰입니다.</li>
+<li>나.의 확장 정보: 번역 기능 제공. 누락 문구 목록은 이용자가 확장 창에서 파일로 저장해 운영자에게 직접 보낼 때(예: 이메일)만 운영자가 받습니다. 파일에 화면의 서버·프로젝트 이름 같은 글이 들어 있을 수 있으니 보내기 전에 확인해 주십시오.</li>
 </ul>
 
 <h2>3. 처리 및 보유 기간</h2>
 <ul>
-<li>운영자가 볼 수 있는 요청 기록(Cloudflare Workers 로그)은 7일이 지나면 자동으로 지워집니다. 대시보드 통계는 개인을 알아볼 수 없는 집계 수치만 보입니다.</li>
+<li>운영자가 볼 수 있는 요청 기록(Cloudflare Workers 로그)은 최대 7일 보관한 뒤 자동으로 지워집니다. 대시보드 통계는 개인을 알아볼 수 없는 집계 수치만 보입니다.</li>
 <li>Cloudflare가 보안과 네트워크 운영을 위해 따로 처리하는 정보는 <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 개인정보처리방침</a>에 따릅니다.</li>
 <li>확장 정보는 이용자가 지우거나 확장을 삭제할 때까지 이용자의 기기에 남습니다.</li>
 <li>법령에 따라 따로 보존하는 개인정보는 없습니다.</li>
@@ -48,6 +49,7 @@
 
 <h2>4. 제3자 제공</h2>
 <p>운영자는 개인정보를 제3자에게 제공하거나 판매하지 않습니다. 다만 법률에 특별한 규정이 있는 경우는 예외입니다.</p>
+<p>확장이 다루는 데이터의 사용은 Chrome 웹 스토어 사용자 데이터 정책(제한적 사용 요건 포함)을 따릅니다. 번역 기능 외의 목적으로 쓰지 않고, 광고 목적으로 전송하거나 판매하지 않으며, 신용도 판단이나 대출에 쓰지 않습니다.</p>
 
 <h2>5. 처리 위탁과 국외 이전</h2>
 <p>운영자는 사이트 운영을 다음과 같이 맡기며, 이 과정에서 접속 기록이 국외로 이전됩니다.</p>
@@ -55,11 +57,12 @@
 <li>이전받는 자: Cloudflare, Inc.(개인정보 문의: <a href="mailto:PrivacyQuestions@cloudflare.com">PrivacyQuestions@cloudflare.com</a>)</li>
 <li>맡기는 업무: 사이트 호스팅과 파일 전송(콘텐츠 전송망)</li>
 <li>이전 항목: 1항 가.의 접속 기록(IP 주소, 요청 시각, 요청한 주소, User-Agent)</li>
-<li>이전 국가: 미국, 그리고 접속한 곳에서 가장 가까운 Cloudflare 데이터센터가 있는 국가</li>
+<li>이전 국가: 미국 및 Cloudflare 데이터센터가 있는 국가(목록: <a href="https://www.cloudflare.com/network/">https://www.cloudflare.com/network/</a>). 요청은 접속한 곳에서 가장 가까운 데이터센터에서 처리됩니다.</li>
 <li>이전 시기와 방법: 사이트에 접속할 때마다 네트워크를 통해 전송</li>
 <li>이용 목적과 보유 기간: 파일 전송과 보안, 3항의 기간</li>
-<li>이전 근거: 서비스 제공에 필요한 처리위탁·보관으로서 이 처리방침에 공개(「개인정보 보호법」 제28조의8 제1항 제3호 가목)</li>
-<li>거부 방법과 효과: 사이트와 확장 갱신을 쓰지 않으면 이전되지 않습니다. 이 경우 설치 스크립트, 한국어판 업데이트 확인, 확장 사전 갱신을 쓸 수 없습니다. 확장의 사전 갱신 확인은 브라우저가 시작할 때 자동으로 이루어지므로, 원하지 않으면 확장을 삭제하시면 됩니다.</li>
+<li>이전 근거: 「개인정보 보호법」 제28조의8 제1항 제3호 가목(정보주체와의 계약 체결·이행을 위한 처리위탁·보관으로서, 같은 조 제2항 각 호의 사항을 이 처리방침에 공개)</li>
+<li>거부 방법: 사이트에 접속하지 않고, 한국어판을 공식판으로 되돌리고(첫 쪽의 되돌리기 명령), 확장을 삭제합니다. 확장은 브라우저가 시작할 때 사전과 갱신을 확인하므로 끄기만으로는 멈추지 않습니다.</li>
+<li>거부의 효과: 설치 스크립트, 한국어판 업데이트 확인, 확장과 사전 갱신을 쓸 수 없습니다.</li>
 </ul>
 <p>이용자가 직접 이용하는 다음 서비스는 운영자가 맡긴 것이 아니며, 각 서비스의 처리방침에 따라 정보를 처리합니다. 운영자는 이들로부터 개인을 알아볼 수 있는 정보를 받지 않습니다(내려받기·설치 횟수 같은 집계만 볼 수 있습니다).</p>
 <ul>
@@ -72,7 +75,7 @@
 <ul>
 <li>운영자는 개인정보를 따로 저장하지 않습니다.</li>
 <li>Cloudflare의 요청 기록은 3항의 기간이 지나면 자동으로 지워집니다.</li>
-<li>확장 정보는 확장 창의 "비우기" 버튼(누락 문구 목록)으로 지우거나, 확장을 삭제하면 브라우저가 지웁니다.</li>
+<li>확장 정보 중 누락 문구 목록은 확장 창의 "비우기" 버튼으로, 켠 주소는 "이 주소에서 끄기"로 지웁니다. 확장을 삭제하면 브라우저가 모두 지웁니다.</li>
 </ul>
 
 <h2>7. 이용자의 권리와 행사 방법</h2>
@@ -115,9 +118,9 @@
 <h2>English summary</h2>
 <ul>
 <li>The operator does not collect personal data directly. There are no accounts, payments, ads, analytics or cookies.</li>
-<li>Requests to https://coolify-ko.geonwoo.dev (opening the site, the installer, update checks from Coolify servers and from the extension) are served by Cloudflare, Inc., which processes the IP address, request time, requested URL and user agent. Request logs visible to the operator are deleted automatically after 7 days.</li>
+<li>Requests to https://coolify-ko.geonwoo.dev (opening the site, the installer, update checks from Coolify servers and from the extension) are served by Cloudflare, Inc., which processes the IP address, request time, requested URL and user agent. Request logs visible to the operator are kept for at most 7 days and then deleted automatically. The extension puts no user data in these requests.</li>
 <li>The browser extension reads page text only on the addresses the user enabled, and replaces it with Korean inside the browser. It stores the enabled addresses, the dictionary and a list of untranslated phrases (at most 2,000 phrases, 200 characters each) in local extension storage. This data never leaves the device unless the user exports it, and the user can clear it at any time.</li>
-<li>The operator does not sell or transfer user data to third parties, does not use it for purposes unrelated to translating the Coolify interface, and does not use it to determine creditworthiness or for lending.</li>
+<li>The operator does not sell or transfer user data to third parties, does not use it for purposes unrelated to translating the Coolify interface, and does not use it to determine creditworthiness or for lending. Use of user data by the extension complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</li>
 <li>Contact: <a href="mailto:kgw@geonwoo.dev">kgw@geonwoo.dev</a>. Effective date: 20 October 2026.</li>
 </ul>
 </body>
