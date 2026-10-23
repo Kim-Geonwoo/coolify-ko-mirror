@@ -3,9 +3,9 @@
     "coolify-ko@unofficial": {
       "updates": [
         {
-          "version": "0.1.3",
-          "update_link": "https://coolify-ko.geonwoo.dev/extension/coolify-ko-0.1.3.xpi",
-          "update_hash": "sha256:ce93fa7993d8b325916dbfbc3c119d009ce8c1cfb6e17f05f78daf345bcbcedd"
+          "version": "0.1.4",
+          "update_link": "https://coolify-ko.geonwoo.dev/extension/coolify-ko-0.1.4.xpi",
+          "update_hash": "sha256:7d108037bd8ba7e4406ff082cce560dbe0d5adbdb8ef853c3dcef29b0b65a510"
         }
       ]
     }
