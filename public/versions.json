@@ -1,7 +1,7 @@
 {
   "coolify": {
     "v4": {
-      "version": "4.4.6"
+      "version": "4.4.7"
     },
     "nightly": {
       "version": "4.5-rc.1"
@@ -32,6 +32,6 @@
     "schema": 1,
     "upstream": "4.4.7",
     "upstreamSeenAt": "2026-10-21T19:26:47.228Z",
-    "refreshedAt": "2026-10-23T07:50:07.951Z"
+    "refreshedAt": "2026-10-23T09:52:39.673Z"
   }
 }
