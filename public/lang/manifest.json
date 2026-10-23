@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "code": "ko",
-  "catalogVersion": "4.4.7",
-  "commit": "b14e26451f712ba6f0b02e1a2ffbf4f6c2a04423",
-  "sha256": "54da2c7dc40842933e28fa2a8a836c9057155d97fc60bf3c45f158a9bf8f9d35"
+  "catalogVersion": "4.5.0",
+  "commit": "ff582ab33cd474b51f3c32016a00cd195640fa81",
+  "sha256": "d0f1359471d02c21f33d0e6956bbdd554f5afb81452ab3f36fe57d71a56c777f"
 }
