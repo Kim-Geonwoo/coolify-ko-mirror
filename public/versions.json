@@ -27,7 +27,7 @@
   },
   "preview": {
     "coolify": {
-      "version": "4.7.6"
+      "version": "4.7.7"
     },
     "helper": {
       "version": "1.0.19"
@@ -107,6 +107,6 @@
     "schema": 1,
     "upstream": "4.7.6",
     "upstreamSeenAt": "2026-11-19T17:58:45.237Z",
-    "refreshedAt": "2026-11-25T07:22:10.526Z"
+    "refreshedAt": "2026-11-25T13:26:12.571Z"
   }
 }
